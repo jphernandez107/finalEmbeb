@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/DHT.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/freertos.c.obj"
-  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/hcsr04_sensor.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
@@ -13,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/system_stm32f4xx.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Startup/startup_stm32f411vetx.s.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+  "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
+  "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
@@ -40,6 +40,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
   "final_embebidos_v2.elf"
+  "final_embebidos_v2.elf.manifest"
   "final_embebidos_v2.elf.pdb"
 )
 

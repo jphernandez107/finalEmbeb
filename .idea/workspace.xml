@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="final_embebidos_v2" targetName="final_embebidos_v2.elf" />
@@ -11,7 +29,100 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12fc72e1-b270-4c8d-a76f-bb8b5de6ee70" name="Default Changelist" comment="" />
+    <list default="true" id="12fc72e1-b270-4c8d-a76f-bb8b5de6ee70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/DHT.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/hcsr04_sensor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/hcsr04_userConf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/DHT.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/hcsr04_sensor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeASMCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/ASM.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/DHT.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/hcsr04_sensor.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/system_stm32f4xx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Startup/startup_stm32f411vetx.s.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/final_embebidos_v2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/final_embebidos_v2.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/final_embebidos_v2.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/final_embebidos_v2.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/final_embebidos_v2.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_embebidos_v2.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/final_embebidos_v2.ioc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +135,8 @@
     <option name="columnWidths">
       <list>
         <option value="237" />
-        <option value="102" />
-        <option value="1002" />
+        <option value="82" />
+        <option value="0" />
       </list>
     </option>
     <option name="columnOrder">
@@ -847,6 +958,9 @@
     </option>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lg1ragj1QM5sR5ryfekpzJmF5N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -854,9 +968,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Core/Src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -911,85 +1026,93 @@
       <workItem from="1612215880017" duration="26713000" />
       <workItem from="1612758513275" duration="40000" />
       <workItem from="1612758573267" duration="1425000" />
+      <workItem from="1627134864943" duration="8260000" />
+      <workItem from="1627225221475" duration="3431000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608004179107">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627237385439">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1608004179107" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1612762032646">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1856.1080@0.0.1856.1080" timestamp="1627237385439" />
+    <state width="1813" height="295" key="GridCell.Tab.0.bottom" timestamp="1627237405700">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612762032646" />
-    <state width="1398" height="350" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1612686101931" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1612762032620">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1813" height="295" key="GridCell.Tab.0.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1627237405700" />
+    <state width="1813" height="295" key="GridCell.Tab.0.center" timestamp="1627237405700">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612762032620" />
-    <state width="1398" height="350" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1612686101927" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1612762032619">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1813" height="295" key="GridCell.Tab.0.center/0.0.1856.1080@0.0.1856.1080" timestamp="1627237405700" />
+    <state width="1813" height="295" key="GridCell.Tab.0.left" timestamp="1627237405700">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612762032619" />
-    <state width="1398" height="350" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1612686101927" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1612762032620">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1813" height="295" key="GridCell.Tab.0.left/0.0.1856.1080@0.0.1856.1080" timestamp="1627237405700" />
+    <state width="1813" height="295" key="GridCell.Tab.0.right" timestamp="1627237405700">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612762032620" />
-    <state width="1398" height="350" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1612686101928" />
-    <state width="1398" height="350" key="GridCell.Tab.1.bottom" timestamp="1612686101933">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="295" key="GridCell.Tab.0.right/0.0.1856.1080@0.0.1856.1080" timestamp="1627237405700" />
+    <state width="1813" height="290" key="GridCell.Tab.1.bottom" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611608283973" />
-    <state width="1398" height="350" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1612686101933" />
-    <state width="1398" height="350" key="GridCell.Tab.1.center" timestamp="1612686101932">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.1.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.1.center" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611608283973" />
-    <state width="1398" height="350" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1612686101932" />
-    <state width="1398" height="350" key="GridCell.Tab.1.left" timestamp="1612686101931">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.1.center/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.1.left" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611608283972" />
-    <state width="1398" height="350" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1612686101931" />
-    <state width="1398" height="350" key="GridCell.Tab.1.right" timestamp="1612686101932">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.1.left/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.1.right" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611608283973" />
-    <state width="1398" height="350" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1612686101932" />
-    <state width="1398" height="350" key="GridCell.Tab.2.bottom" timestamp="1612686101934">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.1.right/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.2.bottom" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611608283975" />
-    <state width="1398" height="350" key="GridCell.Tab.2.bottom/0.23.1440.825@0.23.1440.825" timestamp="1612686101934" />
-    <state width="1398" height="350" key="GridCell.Tab.2.center" timestamp="1612686101933">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.2.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.2.center" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1611608283974" />
-    <state width="1398" height="350" key="GridCell.Tab.2.center/0.23.1440.825@0.23.1440.825" timestamp="1612686101933" />
-    <state width="1398" height="350" key="GridCell.Tab.2.left" timestamp="1612686101933">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.2.center/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.2.left" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1611608283974" />
-    <state width="1398" height="350" key="GridCell.Tab.2.left/0.23.1440.825@0.23.1440.825" timestamp="1612686101933" />
-    <state width="1398" height="350" key="GridCell.Tab.2.right" timestamp="1612686101934">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.2.left/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state width="1813" height="290" key="GridCell.Tab.2.right" timestamp="1627237248852">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1398" height="485" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1611608283974" />
-    <state width="1398" height="350" key="GridCell.Tab.2.right/0.23.1440.825@0.23.1440.825" timestamp="1612686101934" />
-    <state x="354" y="314" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1612220765371">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1813" height="290" key="GridCell.Tab.2.right/0.0.1856.1080@0.0.1856.1080" timestamp="1627237248852" />
+    <state x="635" y="273" width="585" height="558" key="find.popup" timestamp="1627226355446">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state x="260" y="186" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1611605151281" />
-    <state x="354" y="314" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.825@0.23.1440.825" timestamp="1612220765371" />
+    <state x="635" y="273" width="585" height="558" key="find.popup/0.0.1856.1080@0.0.1856.1080" timestamp="1627226355446" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/main.c</url>
+          <line>132</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

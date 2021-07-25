@@ -27,8 +27,6 @@
 #include "Timer_Delay.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "DHT.h"
-#include "hcsr04_sensor.h"
 #include "queue.h"
 /* USER CODE END Includes */
 
@@ -47,51 +45,48 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim9;
 
 /* Definitions for Display */
 osThreadId_t DisplayHandle;
 const osThreadAttr_t Display_attributes = {
   .name = "Display",
-  .priority = (osPriority_t) osPriorityAboveNormal,
+  .priority = (osPriority_t) osPriorityHigh7,
   .stack_size = 128 * 4
 };
-/* Definitions for Buzzer */
-osThreadId_t BuzzerHandle;
-const osThreadAttr_t Buzzer_attributes = {
-  .name = "Buzzer",
-  .priority = (osPriority_t) osPriorityNormal,
+/* Definitions for Lux */
+osThreadId_t LuxHandle;
+const osThreadAttr_t Lux_attributes = {
+  .name = "Lux",
+  .priority = (osPriority_t) osPriorityHigh6,
   .stack_size = 128 * 4
 };
-/* Definitions for DHT_Task */
-osThreadId_t DHT_TaskHandle;
-const osThreadAttr_t DHT_Task_attributes = {
-  .name = "DHT_Task",
-  .priority = (osPriority_t) osPriorityAboveNormal,
+/* Definitions for AmbientTempHum */
+osThreadId_t AmbientTempHumHandle;
+const osThreadAttr_t AmbientTempHum_attributes = {
+  .name = "AmbientTempHum",
+  .priority = (osPriority_t) osPriorityHigh6,
   .stack_size = 128 * 4
 };
-/* Definitions for Servo */
-osThreadId_t ServoHandle;
-const osThreadAttr_t Servo_attributes = {
-  .name = "Servo",
-  .priority = (osPriority_t) osPriorityNormal,
+/* Definitions for SoilHum */
+osThreadId_t SoilHumHandle;
+const osThreadAttr_t SoilHum_attributes = {
+  .name = "SoilHum",
+  .priority = (osPriority_t) osPriorityHigh6,
   .stack_size = 128 * 4
 };
-
-/* Definitions for Temp_Queue */
-osMessageQueueId_t Temp_QueueHandle;
-const osMessageQueueAttr_t Temp_Queue_attributes = {
-  .name = "Temp_Queue"
+/* Definitions for AmbientQueue */
+osMessageQueueId_t AmbientQueueHandle;
+const osMessageQueueAttr_t AmbientQueue_attributes = {
+  .name = "AmbientQueue"
 };
-
-QueueHandle_t Temp_QueueHandle2;
 /* USER CODE BEGIN PV */
-DHT_DataTypeDef DHT22;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,14 +94,13 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_TIM3_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_TIM9_Init(void);
+static void MX_ADC1_Init(void);
 void StartDisplay(void *argument);
-void StartBuzzer(void *argument);
-void StartDHTtask(void *argument);
-void StartServo(void *argument);
-
+void StartLux(void *argument);
+void StartAmbientTempHum(void *argument);
+void StartSoilHum(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -114,34 +108,12 @@ void StartServo(void *argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void Display_Temp(float temp) {
-    lcd16x2_i2c_setCursor(0, 0);
-    lcd16x2_i2c_printf("Temp: %0.2fC", temp);
-}
 
-void delay_us_nueva (uint16_t us)
-{
-    __HAL_TIM_SET_COUNTER(&htim9,0);  // set the counter value a 0
-    while (__HAL_TIM_GET_COUNTER(&htim9) < us);  // wait for the counter to reach the us input in the parameter
-}
-
-
-
-
-void Display_Distance(float distance) {
-    lcd16x2_i2c_setCursor(1,0);
-    lcd16x2_i2c_printf("Dist: %.2f cm    ", distance);
-}
-
-void Display_Time(float time) {
-    lcd16x2_i2c_setCursor(1,0);
-    lcd16x2_i2c_printf("tx:%.2f ms  ", time);
-}
-
-uint32_t sensor_time;
-uint32_t distance;
-uint32_t distanceD;
-uint32_t distanceI;
+//void delay_us_nueva (uint16_t us)
+//{
+//    __HAL_TIM_SET_COUNTER(&htim9,0);  // set the counter value a 0
+//    while (__HAL_TIM_GET_COUNTER(&htim9) < us);  // wait for the counter to reach the us input in the parameter
+//}
 
 /* USER CODE END 0 */
 
@@ -175,14 +147,13 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_TIM3_Init();
   MX_I2C1_Init();
   MX_TIM9_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+//    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+//    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
     TimerDelay_Init();
-    HCSR04_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -201,9 +172,9 @@ int main(void)
   /* USER CODE END RTOS_TIMERS */
 
   /* Create the queue(s) */
-  /* creation of Temp_Queue */
-  Temp_QueueHandle = osMessageQueueNew (25, sizeof(uint8_t), &Temp_Queue_attributes);
-  Temp_QueueHandle2 = xQueueCreate( 2000, sizeof(uint8_t));
+  /* creation of AmbientQueue */
+  AmbientQueueHandle = osMessageQueueNew (25, sizeof(uint8_t), &AmbientQueue_attributes);
+
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
@@ -212,16 +183,14 @@ int main(void)
   /* creation of Display */
   DisplayHandle = osThreadNew(StartDisplay, NULL, &Display_attributes);
 
-  /* creation of Buzzer */
-  BuzzerHandle = osThreadNew(StartBuzzer, NULL, &Buzzer_attributes);
+  /* creation of Lux */
+  LuxHandle = osThreadNew(StartLux, NULL, &Lux_attributes);
 
-  /* creation of DHT_Task */
-  DHT_TaskHandle = osThreadNew(StartDHTtask, NULL, &DHT_Task_attributes);
+  /* creation of AmbientTempHum */
+  AmbientTempHumHandle = osThreadNew(StartAmbientTempHum, NULL, &AmbientTempHum_attributes);
 
-  /* creation of Servo */
-  ServoHandle = osThreadNew(StartServo, NULL, &Servo_attributes);
-
-
+  /* creation of SoilHum */
+  SoilHumHandle = osThreadNew(StartSoilHum, NULL, &SoilHum_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -283,6 +252,56 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_3;
+  sConfig.Rank = 1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -379,7 +398,6 @@ static void MX_TIM2_Init(void)
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
-  TIM_OC_InitTypeDef sConfigOC = {0};
 
   /* USER CODE BEGIN TIM2_Init 1 */
 
@@ -399,87 +417,15 @@ static void MX_TIM2_Init(void)
   {
     Error_Handler();
   }
-  if (HAL_TIM_PWM_Init(&htim2) != HAL_OK)
-  {
-    Error_Handler();
-  }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();
   }
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
-  HAL_TIM_MspPostInit(&htim2);
-
-}
-
-/**
-  * @brief TIM3 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM3_Init(void)
-{
-
-  /* USER CODE BEGIN TIM3_Init 0 */
-
-  /* USER CODE END TIM3_Init 0 */
-
-  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-  TIM_OC_InitTypeDef sConfigOC = {0};
-
-  /* USER CODE BEGIN TIM3_Init 1 */
-
-  /* USER CODE END TIM3_Init 1 */
-  htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 500-1;
-  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 0;
-  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM3_Init 2 */
-
-  /* USER CODE END TIM3_Init 2 */
-  HAL_TIM_MspPostInit(&htim3);
 
 }
 
@@ -555,6 +501,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PA6 */
+  GPIO_InitStruct.Pin = GPIO_PIN_6;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF2_TIM3;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
   /*Configure GPIO pins : LD4_Pin LD3_Pin LD5_Pin LD6_Pin */
   GPIO_InitStruct.Pin = LD4_Pin|LD3_Pin|LD5_Pin|LD6_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -588,117 +542,73 @@ void StartDisplay(void *argument)
           //led?
       }
       lcd16x2_i2c_clear();
-      lcd16x2_i2c_printf("acercar mano");
+      lcd16x2_i2c_printf("acercar manito");
       vTaskDelay(800);
-      if (uxQueueMessagesWaiting(Temp_QueueHandle2) != 0 ){
-          xQueueReceive(Temp_QueueHandle2, &t1Received, 500);
-          lcd16x2_i2c_clear();
-          Display_Temp(t1Received);
-          xTaskNotifyGive(BuzzerHandle);
-          vTaskDelay(1000);
-
-      }
+//      if (uxQueueMessagesWaiting(Temp_QueueHandle2) != 0 ){
+//          xQueueReceive(Temp_QueueHandle2, &t1Received, 500);
+//          lcd16x2_i2c_clear();
+//          Display_Temp(t1Received);
+//          xTaskNotifyGive(BuzzerHandle);
+//          vTaskDelay(1000);
+//
+//      }
   }
   /* USER CODE END 5 */
 }
 
-/* USER CODE BEGIN Header_StartBuzzer */
+/* USER CODE BEGIN Header_StartLux */
 /**
-* @brief Function implementing the Buzzer thread.
+* @brief Function implementing the Lux thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartBuzzer */
-void StartBuzzer(void *argument)
+/* USER CODE END Header_StartLux */
+void StartLux(void *argument)
 {
-  /* USER CODE BEGIN StartBuzzer */
-   int notificationValue;
-    /* Infinite loop */
-  for(;;)
-  {
-notificationValue = ulTaskNotifyTake(pdTRUE,portMAX_DELAY);
-
-if (notificationValue > 0 ){
-    float t = 0;
-    taskENTER_CRITICAL();
-    while  (t<25){
-        HAL_GPIO_WritePin(Buzzer_pin_GPIO_Port, Buzzer_pin_Pin , GPIO_PIN_SET);
-        delay_us(100);
-        HAL_GPIO_WritePin(Buzzer_pin_GPIO_Port, Buzzer_pin_Pin, GPIO_PIN_RESET);
-        delay_us(100);
-        t = t + 1;
-    }
-    taskEXIT_CRITICAL();
-    xTaskNotifyGive(ServoHandle);
-}
-  }
-  /* USER CODE END StartBuzzer */
-}
-
-/* USER CODE BEGIN Header_StartDHTtask */
-/**
-* @brief Function implementing the DHT_Task thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartDHTtask */
-void StartDHTtask(void *argument)
-{
-  /* USER CODE BEGIN StartDHTtask */
-    uint8_t t1 = 10;
-
-
+  /* USER CODE BEGIN StartLux */
   /* Infinite loop */
   for(;;)
   {
-      taskENTER_CRITICAL();
-        sensor_time = hcsr04_read();
-      taskEXIT_CRITICAL();
-      distance  = sensor_time * .034/2;
-
-      if (distance<15){
-          taskENTER_CRITICAL();
-           DHT_GetData(&DHT22);
-          taskEXIT_CRITICAL();
-          t1 = DHT22.Temperature;
-          xQueueSend(Temp_QueueHandle2,  ( void * ) &t1, 500);
-
-          vTaskDelay(1000);
-          HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_SET);
-          vTaskDelay(1000);
-          //osDelay(1000); VA TASK DELAY
-          HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_RESET);
-      }
-
+    osDelay(1);
   }
-  /* USER CODE END StartDHTtask */
+  /* USER CODE END StartLux */
 }
 
-/* USER CODE BEGIN Header_StartServo */
+/* USER CODE BEGIN Header_StartAmbientTempHum */
 /**
-* @brief Function implementing the Servo thread.
+* @brief Function implementing the AmbientTempHum thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartServo */
-void StartServo(void *argument)
+/* USER CODE END Header_StartAmbientTempHum */
+void StartAmbientTempHum(void *argument)
 {
-  /* USER CODE BEGIN StartServo */
+  /* USER CODE BEGIN StartAmbientTempHum */
   /* Infinite loop */
-  int notificationValue;
   for(;;)
   {
-      notificationValue = ulTaskNotifyTake(pdTRUE,portMAX_DELAY);
-      if (notificationValue > 0 ){
-          htim2.Instance->CCR1 = 115;
-          HAL_Delay(350);
-          htim2.Instance->CCR1 = 125;
-      }
-
+    osDelay(1);
   }
-  /* USER CODE END StartServo */
+  /* USER CODE END StartAmbientTempHum */
 }
 
+/* USER CODE BEGIN Header_StartSoilHum */
+/**
+* @brief Function implementing the SoilHum thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartSoilHum */
+void StartSoilHum(void *argument)
+{
+  /* USER CODE BEGIN StartSoilHum */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartSoilHum */
+}
 
 /**
   * @brief  Period elapsed callback in non blocking mode
