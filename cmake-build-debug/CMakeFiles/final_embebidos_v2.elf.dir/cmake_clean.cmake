@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj"
+  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj"
+  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj"
+  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_temp_hum.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/freertos.c.obj"
-  "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
   "CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"

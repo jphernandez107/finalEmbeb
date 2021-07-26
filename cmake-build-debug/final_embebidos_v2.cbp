@@ -114,7 +114,13 @@
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/Timer_Delay.h">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/lcd16x2_i2c.h">
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp.h">
+			<Option target="final_embebidos_v2.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_lcd.h">
+			<Option target="final_embebidos_v2.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_temp_hum.h">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/main.h">
@@ -129,10 +135,16 @@
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/Timer_Delay.c">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/freertos.c">
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp.c">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/lcd16x2_i2c.c">
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.c">
+			<Option target="final_embebidos_v2.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_temp_hum.c">
+			<Option target="final_embebidos_v2.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/freertos.c">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/main.c">

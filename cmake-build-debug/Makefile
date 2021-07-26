@@ -169,6 +169,87 @@ Core/Src/Timer_Delay.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.s
 .PHONY : Core/Src/Timer_Delay.c.s
 
+Core/Src/bsp.obj: Core/Src/bsp.c.obj
+
+.PHONY : Core/Src/bsp.obj
+
+# target to build an object file
+Core/Src/bsp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj
+.PHONY : Core/Src/bsp.c.obj
+
+Core/Src/bsp.i: Core/Src/bsp.c.i
+
+.PHONY : Core/Src/bsp.i
+
+# target to preprocess a source file
+Core/Src/bsp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.i
+.PHONY : Core/Src/bsp.c.i
+
+Core/Src/bsp.s: Core/Src/bsp.c.s
+
+.PHONY : Core/Src/bsp.s
+
+# target to generate assembly for a file
+Core/Src/bsp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.s
+.PHONY : Core/Src/bsp.c.s
+
+Core/Src/bsp_lcd.obj: Core/Src/bsp_lcd.c.obj
+
+.PHONY : Core/Src/bsp_lcd.obj
+
+# target to build an object file
+Core/Src/bsp_lcd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj
+.PHONY : Core/Src/bsp_lcd.c.obj
+
+Core/Src/bsp_lcd.i: Core/Src/bsp_lcd.c.i
+
+.PHONY : Core/Src/bsp_lcd.i
+
+# target to preprocess a source file
+Core/Src/bsp_lcd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.i
+.PHONY : Core/Src/bsp_lcd.c.i
+
+Core/Src/bsp_lcd.s: Core/Src/bsp_lcd.c.s
+
+.PHONY : Core/Src/bsp_lcd.s
+
+# target to generate assembly for a file
+Core/Src/bsp_lcd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.s
+.PHONY : Core/Src/bsp_lcd.c.s
+
+Core/Src/bsp_temp_hum.obj: Core/Src/bsp_temp_hum.c.obj
+
+.PHONY : Core/Src/bsp_temp_hum.obj
+
+# target to build an object file
+Core/Src/bsp_temp_hum.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_temp_hum.c.obj
+.PHONY : Core/Src/bsp_temp_hum.c.obj
+
+Core/Src/bsp_temp_hum.i: Core/Src/bsp_temp_hum.c.i
+
+.PHONY : Core/Src/bsp_temp_hum.i
+
+# target to preprocess a source file
+Core/Src/bsp_temp_hum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_temp_hum.c.i
+.PHONY : Core/Src/bsp_temp_hum.c.i
+
+Core/Src/bsp_temp_hum.s: Core/Src/bsp_temp_hum.c.s
+
+.PHONY : Core/Src/bsp_temp_hum.s
+
+# target to generate assembly for a file
+Core/Src/bsp_temp_hum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_temp_hum.c.s
+.PHONY : Core/Src/bsp_temp_hum.c.s
+
 Core/Src/freertos.obj: Core/Src/freertos.c.obj
 
 .PHONY : Core/Src/freertos.obj
@@ -195,33 +276,6 @@ Core/Src/freertos.s: Core/Src/freertos.c.s
 Core/Src/freertos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/freertos.c.s
 .PHONY : Core/Src/freertos.c.s
-
-Core/Src/lcd16x2_i2c.obj: Core/Src/lcd16x2_i2c.c.obj
-
-.PHONY : Core/Src/lcd16x2_i2c.obj
-
-# target to build an object file
-Core/Src/lcd16x2_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj
-.PHONY : Core/Src/lcd16x2_i2c.c.obj
-
-Core/Src/lcd16x2_i2c.i: Core/Src/lcd16x2_i2c.c.i
-
-.PHONY : Core/Src/lcd16x2_i2c.i
-
-# target to preprocess a source file
-Core/Src/lcd16x2_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.i
-.PHONY : Core/Src/lcd16x2_i2c.c.i
-
-Core/Src/lcd16x2_i2c.s: Core/Src/lcd16x2_i2c.c.s
-
-.PHONY : Core/Src/lcd16x2_i2c.s
-
-# target to generate assembly for a file
-Core/Src/lcd16x2_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.s
-.PHONY : Core/Src/lcd16x2_i2c.c.s
 
 Core/Src/main.obj: Core/Src/main.c.obj
 
@@ -1216,12 +1270,18 @@ help:
 	@echo ... Core/Src/Timer_Delay.obj
 	@echo ... Core/Src/Timer_Delay.i
 	@echo ... Core/Src/Timer_Delay.s
+	@echo ... Core/Src/bsp.obj
+	@echo ... Core/Src/bsp.i
+	@echo ... Core/Src/bsp.s
+	@echo ... Core/Src/bsp_lcd.obj
+	@echo ... Core/Src/bsp_lcd.i
+	@echo ... Core/Src/bsp_lcd.s
+	@echo ... Core/Src/bsp_temp_hum.obj
+	@echo ... Core/Src/bsp_temp_hum.i
+	@echo ... Core/Src/bsp_temp_hum.s
 	@echo ... Core/Src/freertos.obj
 	@echo ... Core/Src/freertos.i
 	@echo ... Core/Src/freertos.s
-	@echo ... Core/Src/lcd16x2_i2c.obj
-	@echo ... Core/Src/lcd16x2_i2c.i
-	@echo ... Core/Src/lcd16x2_i2c.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s

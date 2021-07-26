@@ -32,8 +32,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/Timer_Delay.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj"
+  "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj"
+  "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj"
+  "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_temp_hum.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_temp_hum.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/freertos.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/freertos.c.obj"
-  "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/lcd16x2_i2c.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/main.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/stm32f4xx_hal_msp.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/stm32f4xx_hal_timebase_tim.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"
