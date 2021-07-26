@@ -223,6 +223,60 @@ Core/Src/bsp_lcd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.s
 .PHONY : Core/Src/bsp_lcd.c.s
 
+Core/Src/bsp_lux_sensor.obj: Core/Src/bsp_lux_sensor.c.obj
+
+.PHONY : Core/Src/bsp_lux_sensor.obj
+
+# target to build an object file
+Core/Src/bsp_lux_sensor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lux_sensor.c.obj
+.PHONY : Core/Src/bsp_lux_sensor.c.obj
+
+Core/Src/bsp_lux_sensor.i: Core/Src/bsp_lux_sensor.c.i
+
+.PHONY : Core/Src/bsp_lux_sensor.i
+
+# target to preprocess a source file
+Core/Src/bsp_lux_sensor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lux_sensor.c.i
+.PHONY : Core/Src/bsp_lux_sensor.c.i
+
+Core/Src/bsp_lux_sensor.s: Core/Src/bsp_lux_sensor.c.s
+
+.PHONY : Core/Src/bsp_lux_sensor.s
+
+# target to generate assembly for a file
+Core/Src/bsp_lux_sensor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lux_sensor.c.s
+.PHONY : Core/Src/bsp_lux_sensor.c.s
+
+Core/Src/bsp_soil_humidity_sensor.obj: Core/Src/bsp_soil_humidity_sensor.c.obj
+
+.PHONY : Core/Src/bsp_soil_humidity_sensor.obj
+
+# target to build an object file
+Core/Src/bsp_soil_humidity_sensor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_soil_humidity_sensor.c.obj
+.PHONY : Core/Src/bsp_soil_humidity_sensor.c.obj
+
+Core/Src/bsp_soil_humidity_sensor.i: Core/Src/bsp_soil_humidity_sensor.c.i
+
+.PHONY : Core/Src/bsp_soil_humidity_sensor.i
+
+# target to preprocess a source file
+Core/Src/bsp_soil_humidity_sensor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_soil_humidity_sensor.c.i
+.PHONY : Core/Src/bsp_soil_humidity_sensor.c.i
+
+Core/Src/bsp_soil_humidity_sensor.s: Core/Src/bsp_soil_humidity_sensor.c.s
+
+.PHONY : Core/Src/bsp_soil_humidity_sensor.s
+
+# target to generate assembly for a file
+Core/Src/bsp_soil_humidity_sensor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_soil_humidity_sensor.c.s
+.PHONY : Core/Src/bsp_soil_humidity_sensor.c.s
+
 Core/Src/bsp_temp_hum.obj: Core/Src/bsp_temp_hum.c.obj
 
 .PHONY : Core/Src/bsp_temp_hum.obj
@@ -1276,6 +1330,12 @@ help:
 	@echo ... Core/Src/bsp_lcd.obj
 	@echo ... Core/Src/bsp_lcd.i
 	@echo ... Core/Src/bsp_lcd.s
+	@echo ... Core/Src/bsp_lux_sensor.obj
+	@echo ... Core/Src/bsp_lux_sensor.i
+	@echo ... Core/Src/bsp_lux_sensor.s
+	@echo ... Core/Src/bsp_soil_humidity_sensor.obj
+	@echo ... Core/Src/bsp_soil_humidity_sensor.i
+	@echo ... Core/Src/bsp_soil_humidity_sensor.s
 	@echo ... Core/Src/bsp_temp_hum.obj
 	@echo ... Core/Src/bsp_temp_hum.i
 	@echo ... Core/Src/bsp_temp_hum.s

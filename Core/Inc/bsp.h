@@ -101,7 +101,7 @@ void BSP_Read_Ambient_Temp_Hum();
  * @param[in] row - 0 or 1 for line1 or line2
  * @param[in] col - 0 - 15 (16 columns LCD)
  */
-inline void BSP_LCD_Set_Cursor(uint8_t row, uint8_t col);
+void BSP_LCD_Set_Cursor(uint8_t row, uint8_t col);
 
 /**
 * @brief LCD Print

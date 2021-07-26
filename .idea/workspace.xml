@@ -30,15 +30,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12fc72e1-b270-4c8d-a76f-bb8b5de6ee70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/lcd16x2_i2c.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/lcd16x2_i2c.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/bsp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/bsp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/lcd16x2_i2c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/build.make" afterDir="false" />
@@ -961,7 +957,7 @@
       <workItem from="1612758573267" duration="1425000" />
       <workItem from="1627134864943" duration="8260000" />
       <workItem from="1627225221475" duration="5429000" />
-      <workItem from="1627327331417" duration="5232000" />
+      <workItem from="1627327331417" duration="5627000" />
     </task>
     <servers />
   </component>
@@ -985,22 +981,22 @@
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
     <state x="658" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1856.1080@0.0.1856.1080" timestamp="1627238484831" />
-    <state width="882" height="294" key="GridCell.Tab.0.bottom" timestamp="1627332515597">
+    <state width="882" height="294" key="GridCell.Tab.0.bottom" timestamp="1627334292681">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="882" height="294" key="GridCell.Tab.0.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1627332515597" />
-    <state width="882" height="294" key="GridCell.Tab.0.center" timestamp="1627332515597">
+    <state width="882" height="294" key="GridCell.Tab.0.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1627334292681" />
+    <state width="882" height="294" key="GridCell.Tab.0.center" timestamp="1627334292681">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="882" height="294" key="GridCell.Tab.0.center/0.0.1856.1080@0.0.1856.1080" timestamp="1627332515597" />
-    <state width="882" height="294" key="GridCell.Tab.0.left" timestamp="1627332515597">
+    <state width="882" height="294" key="GridCell.Tab.0.center/0.0.1856.1080@0.0.1856.1080" timestamp="1627334292681" />
+    <state width="882" height="294" key="GridCell.Tab.0.left" timestamp="1627334292681">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="882" height="294" key="GridCell.Tab.0.left/0.0.1856.1080@0.0.1856.1080" timestamp="1627332515597" />
-    <state width="882" height="294" key="GridCell.Tab.0.right" timestamp="1627332515597">
+    <state width="882" height="294" key="GridCell.Tab.0.left/0.0.1856.1080@0.0.1856.1080" timestamp="1627334292681" />
+    <state width="882" height="294" key="GridCell.Tab.0.right" timestamp="1627334292681">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="882" height="294" key="GridCell.Tab.0.right/0.0.1856.1080@0.0.1856.1080" timestamp="1627332515597" />
+    <state width="882" height="294" key="GridCell.Tab.0.right/0.0.1856.1080@0.0.1856.1080" timestamp="1627334292681" />
     <state width="882" height="361" key="GridCell.Tab.1.bottom" timestamp="1627332280341">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>

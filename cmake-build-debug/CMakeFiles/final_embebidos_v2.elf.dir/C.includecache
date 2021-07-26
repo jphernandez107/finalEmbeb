@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../Core/Inc/bsp.h
-stdint.h
-../Core/Inc/stdint.h
-
-../Core/Inc/bsp_lcd.h
-stdbool.h
--
+../Core/Inc/bsp_lux_sensor.h
 stm32f4xx.h
 ../Core/Inc/stm32f4xx.h
 stm32f4xx_hal.h
 ../Core/Inc/stm32f4xx_hal.h
-bsp.h
-../Core/Inc/bsp.h
+
+../Core/Inc/bsp_soil_humidity_sensor.h
+stdint.h
+-
 
 ../Core/Inc/stm32f4xx_hal_conf.h
 stm32f4xx_hal_rcc.h
@@ -330,13 +326,11 @@ stm32f4xx_hal_tim_ex.h
 stm32f4xx_hal_def.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 
-C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.c
-bsp_lcd.h
-C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.h
-stdio.h
--
-string.h
--
-stdarg.h
--
+C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lux_sensor.c
+bsp_lux_sensor.h
+C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lux_sensor.h
+
+C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_soil_humidity_sensor.c
+bsp_soil_humidity_sensor.h
+C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_soil_humidity_sensor.h
 
