@@ -177,6 +177,19 @@ void TIM1_UP_TIM10_IRQHandler(void)
 
 /* USER CODE BEGIN 1 */
 /**
+  * @brief This function handles EXTI line0 interrupt.
+  */
+void EXTI0_IRQHandler(void) {
+    HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+}
+
+/**
+  * @brief This function handles EXTI line2 interrupt.
+  */
+void EXTI2_IRQHandler(void) {
+    HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_2);
+}
+/**
   * @brief This function handles ADC1 global interrupt.
   */
 void ADC_IRQHandler(void) {

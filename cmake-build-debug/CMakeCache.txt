@@ -123,7 +123,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/final_embebidos_v2
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/FinalEmbebidos
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/gcc-arm-none-eabi-8-2019-q3/bin/arm-none-eabi-ld.exe
@@ -161,7 +161,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=final_embebidos_v2
+CMAKE_PROJECT_NAME:STATIC=FinalEmbebidos
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/gcc-arm-none-eabi-8-2019-q3/bin/arm-none-eabi-ranlib.exe
@@ -225,6 +225,12 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/gcc-arm-none-eabi-8-2019-q3/bin/
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+FinalEmbebidos_BINARY_DIR:STATIC=C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug
+
+//Value Computed by CMake
+FinalEmbebidos_SOURCE_DIR:STATIC=C:/Users/juan_/CLionProjects/FinalEmbebidos
+
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=ProcessorCount_cmd_getconf-NOTFOUND
 
@@ -254,12 +260,6 @@ ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
 
 //Path to a program.
 ProcessorCount_cmd_uname:FILEPATH=ProcessorCount_cmd_uname-NOTFOUND
-
-//Value Computed by CMake
-final_embebidos_v2_BINARY_DIR:STATIC=C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug
-
-//Value Computed by CMake
-final_embebidos_v2_SOURCE_DIR:STATIC=C:/Users/juan_/CLionProjects/FinalEmbebidos
 
 
 ########################

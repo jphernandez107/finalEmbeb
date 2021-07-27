@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/final_embebidos_v2.elf.dir/DependInfo.cmake"
+  "CMakeFiles/FinalEmbebidos.elf.dir/DependInfo.cmake"
   )

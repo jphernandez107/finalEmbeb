@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>final_embebidos_v2</name>
+	<name>FinalEmbebidos</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -33,9 +33,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>final_embebidos_v2.ioc</name>
+			<name>FinalEmbebidos.ioc</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/final_embebidos_v2.ioc</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/FinalEmbebidos.ioc</locationURI>
 		</link>
 		<link>
 			<name>Drivers/CMSIS/system_stm32f4xx.c</name>

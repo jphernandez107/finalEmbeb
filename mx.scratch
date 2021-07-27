@@ -9,9 +9,9 @@
     <HAL_Driver>C:\Users\juan_\STM32Cube\Repository\STM32Cube_FW_F4_V1.25.2\</HAL_Driver>
     <CMSIS>Drivers/CMSIS</CMSIS>
     <Toolchain>STM32CubeIDE</Toolchain>
-    <IocFile>final_embebidos_v2.ioc</IocFile>
+    <IocFile>FinalEmbebidos.ioc</IocFile>
     <Project>
-      <ProjectName>final_embebidos_v2</ProjectName>
+      <ProjectName>FinalEmbebidos</ProjectName>
       <ProjectNature>C</ProjectNature>
       <Secure />
       <filestoremove>
@@ -24,7 +24,7 @@
       </sourceEntriesToRemove>
       <configs>
         <config>
-          <name>final_embebidos_v2</name>
+          <name>FinalEmbebidos</name>
           <mainSourceRepo>Core</mainSourceRepo>
           <sourceStructure>Advanced</sourceStructure>
           <device>STM32F411VETx</device>

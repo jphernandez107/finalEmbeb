@@ -1,5 +1,5 @@
 The target system is: Generic - 1 - 
-The host system is: Windows - 10.0.19041 - AMD64
+The host system is: Windows - 10.0.19043 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/Program Files/JetBrains/gcc-arm-none-eabi-8-2019-q3/bin/arm-none-eabi-gcc.exe 
 Build flags: 
@@ -35,15 +35,15 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_db35c/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_db35c.dir\build.make CMakeFiles/cmTC_db35c.dir/build
+Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_9f68a/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9f68a.dir\build.make CMakeFiles/cmTC_9f68a.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_db35c.dir/testCCompiler.c.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE    -o CMakeFiles\cmTC_db35c.dir\testCCompiler.c.obj   -c C:\Users\juan_\CLionProjects\FinalEmbebidos\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C static library libcmTC_db35c.a
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_db35c.dir\cmake_clean_target.cmake
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_db35c.dir\link.txt --verbose=1
-arm-none-eabi-ar qc libcmTC_db35c.a  CMakeFiles/cmTC_db35c.dir/testCCompiler.c.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_db35c.a
+Building C object CMakeFiles/cmTC_9f68a.dir/testCCompiler.c.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE    -o CMakeFiles\cmTC_9f68a.dir\testCCompiler.c.obj   -c C:\Users\juan_\CLionProjects\FinalEmbebidos\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C static library libcmTC_9f68a.a
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_9f68a.dir\cmake_clean_target.cmake
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9f68a.dir\link.txt --verbose=1
+arm-none-eabi-ar qc libcmTC_9f68a.a  CMakeFiles/cmTC_9f68a.dir/testCCompiler.c.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_9f68a.a
 mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -51,18 +51,18 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebi
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_621ca/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_621ca.dir\build.make CMakeFiles/cmTC_621ca.dir/build
+Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_ef3dd/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ef3dd.dir\build.make CMakeFiles/cmTC_ef3dd.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_621ca.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE   -v -o CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c"
+Building C object CMakeFiles/cmTC_ef3dd.dir/CMakeCCompilerABI.c.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE   -v -o CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
 COLLECT_GCC=C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE
 Target: arm-none-eabi
 Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile
 Thread model: single
 gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\juan_\AppData\Local\Temp\cc41ICmM.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\juan_\AppData\Local\Temp\cc3I32kb.s
 GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
 	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -83,17 +83,17 @@ GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 2
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: e849902a6aacc553fd145989da8a517b
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj C:\Users\juan_\AppData\Local\Temp\cc41ICmM.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj C:\Users\juan_\AppData\Local\Temp\cc3I32kb.s
 GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703
 COMPILER_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
-Linking C static library libcmTC_621ca.a
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_621ca.dir\cmake_clean_target.cmake
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_621ca.dir\link.txt --verbose=1
-arm-none-eabi-ar qc libcmTC_621ca.a  CMakeFiles/cmTC_621ca.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_621ca.a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+Linking C static library libcmTC_ef3dd.a
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_ef3dd.dir\cmake_clean_target.cmake
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ef3dd.dir\link.txt --verbose=1
+arm-none-eabi-ar qc libcmTC_ef3dd.a  CMakeFiles/cmTC_ef3dd.dir/CMakeCCompilerABI.c.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_ef3dd.a
 mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -115,18 +115,18 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_621ca/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_621ca.dir\build.make CMakeFiles/cmTC_621ca.dir/build]
+  ignore line: [Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_ef3dd/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ef3dd.dir\build.make CMakeFiles/cmTC_ef3dd.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_621ca.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE   -v -o CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Building C object CMakeFiles/cmTC_ef3dd.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE   -v -o CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR19DD~1.EXE]
   ignore line: [Target: arm-none-eabi]
   ignore line: [Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile]
   ignore line: [Thread model: single]
   ignore line: [gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\juan_\AppData\Local\Temp\cc41ICmM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\juan_\AppData\Local\Temp\cc3I32kb.s]
   ignore line: [GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -147,8 +147,8 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: e849902a6aacc553fd145989da8a517b]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj C:\Users\juan_\AppData\Local\Temp\cc41ICmM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj C:\Users\juan_\AppData\Local\Temp\cc3I32kb.s]
   ignore line: [GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703]
   ignore line: [COMPILER_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/]
@@ -157,12 +157,12 @@ Parsed C implicit link information from above output:
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_621ca.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [Linking C static library libcmTC_621ca.a]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_621ca.dir\cmake_clean_target.cmake]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_621ca.dir\link.txt --verbose=1]
-  ignore line: [arm-none-eabi-ar qc libcmTC_621ca.a  CMakeFiles/cmTC_621ca.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_621ca.a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_ef3dd.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [Linking C static library libcmTC_ef3dd.a]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_ef3dd.dir\cmake_clean_target.cmake]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ef3dd.dir\link.txt --verbose=1]
+  ignore line: [arm-none-eabi-ar qc libcmTC_ef3dd.a  CMakeFiles/cmTC_ef3dd.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_ef3dd.a]
   ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp']
   ignore line: []
   ignore line: []
@@ -174,15 +174,15 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_cdc6e/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cdc6e.dir\build.make CMakeFiles/cmTC_cdc6e.dir/build
+Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_ab5ae/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ab5ae.dir\build.make CMakeFiles/cmTC_ab5ae.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cdc6e.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE     -o CMakeFiles\cmTC_cdc6e.dir\testCXXCompiler.cxx.obj -c C:\Users\juan_\CLionProjects\FinalEmbebidos\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX static library libcmTC_cdc6e.a
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_cdc6e.dir\cmake_clean_target.cmake
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cdc6e.dir\link.txt --verbose=1
-arm-none-eabi-ar qc libcmTC_cdc6e.a  CMakeFiles/cmTC_cdc6e.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_cdc6e.a
+Building CXX object CMakeFiles/cmTC_ab5ae.dir/testCXXCompiler.cxx.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE     -o CMakeFiles\cmTC_ab5ae.dir\testCXXCompiler.cxx.obj -c C:\Users\juan_\CLionProjects\FinalEmbebidos\cmake-build-debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX static library libcmTC_ab5ae.a
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_ab5ae.dir\cmake_clean_target.cmake
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ab5ae.dir\link.txt --verbose=1
+arm-none-eabi-ar qc libcmTC_ab5ae.a  CMakeFiles/cmTC_ab5ae.dir/testCXXCompiler.cxx.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_ab5ae.a
 mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -190,18 +190,18 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebi
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_42208/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_42208.dir\build.make CMakeFiles/cmTC_42208.dir/build
+Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_54d79/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_54d79.dir\build.make CMakeFiles/cmTC_54d79.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_42208.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE    -v -o CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"
+Building CXX object CMakeFiles/cmTC_54d79.dir/CMakeCXXCompilerABI.cpp.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE    -v -o CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
 COLLECT_GCC=C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE
 Target: arm-none-eabi
 Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile
 Thread model: single
 gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\juan_\AppData\Local\Temp\cctwdiEm.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\juan_\AppData\Local\Temp\ccd2oQyR.s
 GNU C++14 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
 	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -228,17 +228,17 @@ GNU C++14 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 69ee3c4857777a212907aac1b1ed675c
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\juan_\AppData\Local\Temp\cctwdiEm.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\juan_\AppData\Local\Temp\ccd2oQyR.s
 GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703
 COMPILER_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/jetbra~1/gcc-ar~1/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
-Linking CXX static library libcmTC_42208.a
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_42208.dir\cmake_clean_target.cmake
-"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_42208.dir\link.txt --verbose=1
-arm-none-eabi-ar qc libcmTC_42208.a  CMakeFiles/cmTC_42208.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_42208.a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+Linking CXX static library libcmTC_54d79.a
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_54d79.dir\cmake_clean_target.cmake
+"C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_54d79.dir\link.txt --verbose=1
+arm-none-eabi-ar qc libcmTC_54d79.a  CMakeFiles/cmTC_54d79.dir/CMakeCXXCompilerABI.cpp.obj
+C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_54d79.a
 mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -266,18 +266,18 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_42208/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_42208.dir\build.make CMakeFiles/cmTC_42208.dir/build]
+  ignore line: [Run Build Command(s):C:/SysGCC/mingw64/bin/mingw32-make.exe cmTC_54d79/fast && C:/SysGCC/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_54d79.dir\build.make CMakeFiles/cmTC_54d79.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_42208.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE    -v -o CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Building CXX object CMakeFiles/cmTC_54d79.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE    -v -o CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\AR10B2~1.EXE]
   ignore line: [Target: arm-none-eabi]
   ignore line: [Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile]
   ignore line: [Thread model: single]
   ignore line: [gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\juan_\AppData\Local\Temp\cctwdiEm.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -iprefix c:\progra~1\jetbra~1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~1\jetbra~1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\juan_\AppData\Local\Temp\ccd2oQyR.s]
   ignore line: [GNU C++14 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -304,8 +304,8 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 69ee3c4857777a212907aac1b1ed675c]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\juan_\AppData\Local\Temp\cctwdiEm.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\juan_\AppData\Local\Temp\ccd2oQyR.s]
   ignore line: [GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703]
   ignore line: [COMPILER_PATH=c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/]
@@ -314,12 +314,12 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/progra~1/jetbra~1/gcc-ar~1/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_42208.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [Linking CXX static library libcmTC_42208.a]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_42208.dir\cmake_clean_target.cmake]
-  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_42208.dir\link.txt --verbose=1]
-  ignore line: [arm-none-eabi-ar qc libcmTC_42208.a  CMakeFiles/cmTC_42208.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_42208.a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54d79.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [Linking CXX static library libcmTC_54d79.a]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -P CMakeFiles\cmTC_54d79.dir\cmake_clean_target.cmake]
+  ignore line: ["C:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_54d79.dir\link.txt --verbose=1]
+  ignore line: [arm-none-eabi-ar qc libcmTC_54d79.a  CMakeFiles/cmTC_54d79.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\PROGRA~1\JETBRA~1\GCC-AR~1\bin\ARM-NO~3.EXE libcmTC_54d79.a]
   ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/CMakeTmp']
   ignore line: []
   ignore line: []

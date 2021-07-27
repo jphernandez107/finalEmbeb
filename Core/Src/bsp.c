@@ -6,6 +6,8 @@
 #include "stm32f4xx.h"
 #include <stm32f4xx_hal_tim.h>
 #include "stm32f4xx_hal.h"
+#include "bsp_actuators.h"
+#include "bsp_switches.h"
 #include "bsp_lcd.h"
 #include "bsp_lux_sensor.h"
 #include "bsp_temp_hum.h"
@@ -73,6 +75,8 @@ void BSP_Init() {
     I2C1_Init();
     HAL_TIM_Init();
     ADC1_Init();
+    BSP_Actuators_Init();
+    BSP_Switches_Init();
     lcd16x2_i2c_init(&hi2c1);
     BSP_LCD_Initialize();
     BH1750_Init(&hi2c1);
@@ -129,36 +133,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if (htim->Instance == TIM10) {
         HAL_IncTick();
     }
-
-//    if(htim->Instance == TIM2){
-//        if (App_100msTimeOut){
-//            App_100msTimeOut--;
-//            if (App_100msTimeOut == 0){
-//                App_100msTimeOut = 100;
-//                APP_Timer100ms();
-//                DHT_GetData(&DHT22);
-//            }
-//        }
-//        if (App_10msTimeOut){
-//            App_10msTimeOut--;
-//            if (App_10msTimeOut == 0){
-//                App_10msTimeOut = 10;
-//                APP_Timer10ms();
-//            }
-//        }
-//        if (App_1000msTimeOut){
-//            App_1000msTimeOut--;
-//            if (App_1000msTimeOut == 0){
-//                App_1000msTimeOut = 1000;
-//                App_10sTimeOut--;
-//                APP_Timer1000ms();
-//                if(App_10sTimeOut == 0) {
-//                    App_10sTimeOut = 10;
-//                    APP_Timer10s();
-//                }
-//            }
-//        }
-//    }
 }
 
 /**
@@ -167,6 +141,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   * @retval None
   */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+    BSP_Switches_Pin_Interrupt_Callback(GPIO_Pin);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {

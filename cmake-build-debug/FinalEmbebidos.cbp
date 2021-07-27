@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="final_embebidos_v2"/>
+		<Option title="FinalEmbebidos"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -17,8 +17,8 @@
 					<DistClean command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="final_embebidos_v2.elf">
-				<Option output="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/final_embebidos_v2.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="FinalEmbebidos.elf">
+				<Option output="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/FinalEmbebidos.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -46,14 +46,14 @@
 					<Add directory="c:\program files\jetbrains\gcc-arm-none-eabi-8-2019-q3\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 final_embebidos_v2.elf"/>
+					<Build command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalEmbebidos.elf"/>
 					<CompileFile command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="final_embebidos_v2.elf/fast">
-				<Option output="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/final_embebidos_v2.elf" prefix_auto="0" extension_auto="0"/>
+			<Target title="FinalEmbebidos.elf/fast">
+				<Option output="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/FinalEmbebidos.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -81,7 +81,7 @@
 					<Add directory="c:\program files\jetbrains\gcc-arm-none-eabi-8-2019-q3\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 final_embebidos_v2.elf/fast"/>
+					<Build command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 FinalEmbebidos.elf/fast"/>
 					<CompileFile command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/SysGCC/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -109,361 +109,373 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/FreeRTOSConfig.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_actuators.h">
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_lcd.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_lux_sensor.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_soil_humidity_sensor.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_switches.h">
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp_temp_hum.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/main.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/stm32f4xx_hal_conf.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/stm32f4xx_it.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_actuators.c">
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lux_sensor.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_soil_humidity_sensor.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_switches.c">
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_temp_hum.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/freertos.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/main.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/stm32f4xx_hal_msp.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/stm32f4xx_hal_timebase_tim.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/stm32f4xx_it.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/syscalls.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/sysmem.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/system_stm32f4xx.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Startup/startup_stm32f411vetx.s">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_armcc.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_armclang.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_compiler.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_gcc.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_iccarm.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/cmsis_version.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_armv8mbl.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_armv8mml.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm0.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm0plus.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm1.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm23.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm3.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm33.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm4.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_cm7.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_sc000.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/core_sc300.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/mpu_armv7.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/mpu_armv8.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/CMSIS/Include/tz_context.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/list.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/STM32F411VETX_FLASH.ld">
-			<Option target="final_embebidos_v2.elf"/>
+			<Option target="FinalEmbebidos.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

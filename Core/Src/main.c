@@ -4,6 +4,8 @@
 #include "queue.h"
 
 TIM_HandleTypeDef htim1;
+void *CoolingPump, *IrrigationPump;
+void *CoolingSwitch, *IrrigationSwitch;
 
 osThreadId_t DisplayHandle;
 const osThreadAttr_t Display_attributes = {
@@ -95,6 +97,15 @@ void APP_Display_Room_Humidity(float RoomHum) {
     BSP_LCD_Set_Cursor(0, 7);
     BSP_LCD_Print_Custom_Char(DROP);
     BSP_LCD_Print("%0.0f%c ", RoomHum, '%');
+}
+
+void APP_Switch_Release_Event(void *pressedSwitch) {
+
+    if (pressedSwitch == CoolingSwitch) {
+        BSP_Actuator_Toggle(CoolingPump);
+    } else if (pressedSwitch == IrrigationSwitch) {
+        BSP_Actuator_Toggle(IrrigationPump);
+    }
 }
 
 /**

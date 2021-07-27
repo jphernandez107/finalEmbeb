@@ -55,6 +55,8 @@ void UsageFault_Handler(void);
 void DebugMon_Handler(void);
 void TIM1_UP_TIM10_IRQHandler(void);
 /* USER CODE BEGIN EFP */
+void EXTI0_IRQHandler(void);
+void EXTI2_IRQHandler(void);
 
 /* USER CODE END EFP */
 
