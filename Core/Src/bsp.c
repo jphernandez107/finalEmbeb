@@ -50,6 +50,8 @@ extern void APP_Timer10ms();
 
 volatile static uint32_t gu32_ticks = 0;
 uint32_t adc_values[ADC_CHANNELS];
+uint8_t soilHumValue = 0;
+uint32_t adcVal = 0;
 
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
@@ -178,6 +180,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     DHT_GetData(&DHT22);
 }
 
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
+    adcVal = HAL_ADC_GetValue(hadc);
+    soilHumValue = BSP_Soil_Humidity_Get_Humidity(adcVal);
+}
+
 /**
   * @brief I2C1 Initialization Function
   * @param None
@@ -230,31 +237,24 @@ void BSP_Blocking_delay_us(volatile uint16_t uS) {
 static void ADC1_Init(void) {
     ADC_ChannelConfTypeDef sConfig = {0};
 
-    /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
-    */
+    /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)*/
     hadc1.Instance = ADC1;
     hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
     hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-    hadc1.Init.ScanConvMode = ENABLE;
-    hadc1.Init.ContinuousConvMode = ENABLE;
+    hadc1.Init.ScanConvMode = DISABLE;
+    hadc1.Init.ContinuousConvMode = DISABLE;
     hadc1.Init.DiscontinuousConvMode = DISABLE;
     hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
     hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
     hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-    hadc1.Init.NbrOfConversion = 2;
-    hadc1.Init.DMAContinuousRequests = ENABLE;
+    hadc1.Init.NbrOfConversion = 1;
+    hadc1.Init.DMAContinuousRequests = DISABLE;
     hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
     if (HAL_ADC_Init(&hadc1) != HAL_OK) Error_Handler();
-    /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-    */
-    sConfig.Channel = ADC_CHANNEL_1;
+    /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.*/
+    sConfig.Channel = ADC_CHANNEL_3;
     sConfig.Rank = 1;
-    sConfig.SamplingTime = ADC_SAMPLETIME_480CYCLES;
-    if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) Error_Handler();
-    /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-    */
-    sConfig.Channel = ADC_CHANNEL_2;
-    sConfig.Rank = 2;
+    sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
     if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) Error_Handler();
 }
 
@@ -396,17 +396,11 @@ float BSP_Get_Room_Humidity() {
 * @retval uint32_t Returns the current soil humidity
 */
 uint32_t BSP_Get_Soil_Humidity() {
-    return 0;//BSP_Soil_Humidity_Get_Humidity(adc_values[0]);
+    return soilHumValue;
 }
 
-/**
-* @brief Get Co2 value
-* This function gets the current Co2 value from the sensor
-* @param None
-* @retval uint32_t Returns the current Co2 value on ppm (p/m)
-*/
-uint16_t BSP_Get_Co2() {
-    return 0;//BSP_Co2_Get_PPM(BSP_Co2_Get_Voltage(adc_values[1]));
+void BSP_Read_Soil_Humidity() {
+    HAL_ADC_Start_IT(&hadc1);
 }
 
 /**

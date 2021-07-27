@@ -81,6 +81,14 @@ float BSP_Get_Room_Humidity();
 uint32_t BSP_Get_Soil_Humidity();
 
 /**
+* @brief Start ADC read for Soil Humidity Sensor
+* This function starts the ADC for Soil Humidity sensor read
+* @param None
+* @retval none
+*/
+void BSP_Read_Soil_Humidity();
+
+/**
 * @brief Get Co2 value
 * This function gets the current Co2 value from the sensor
 * @param None

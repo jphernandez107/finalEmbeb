@@ -89,6 +89,8 @@ const osMessageQueueAttr_t AmbientQueue_attributes = {
 /* USER CODE BEGIN PV */
 QueueHandle_t AmbientTempQueueHandle;
 QueueHandle_t AmbientHumQueueHandle;
+QueueHandle_t AmbientLuxQueueHandle;
+QueueHandle_t SoilHumQueueHandle;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -179,8 +181,10 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
-  AmbientTempQueueHandle = xQueueCreate(200, sizeof(float));
-  AmbientHumQueueHandle = xQueueCreate(200, sizeof(float));
+  AmbientTempQueueHandle = xQueueCreate(100, sizeof(float));
+  AmbientHumQueueHandle = xQueueCreate(100, sizeof(float));
+  AmbientLuxQueueHandle = xQueueCreate(100, sizeof(float));
+//  SoilHumQueueHandle = xQueueCreate(200, sizeof(uint8_t));
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -537,13 +541,14 @@ void APP_Display_Room_Temperature(float RoomTemp) {
 }
 
 void APP_Display_Soil_Humidity(uint32_t hum) {
-    BSP_LCD_Set_Cursor(0, 12);   //0,12
+    BSP_LCD_Set_Cursor(1, 3);   //0,12
     BSP_LCD_Print("S%d%c", hum, '%');
     BSP_LCD_Print("  ");
 }
 
 void APP_Display_Room_Humidity(float RoomHum) {
     if (RoomHum >= 100) RoomHum = 99;
+    if (RoomHum <= 0) RoomHum = 0;
     BSP_LCD_Set_Cursor(0, 7);
     BSP_LCD_Print_Custom_Char(DROP);
     BSP_LCD_Print("%0.0f%c ", RoomHum, '%');
@@ -564,26 +569,32 @@ void StartDisplay(void *argument)
   /* USER CODE BEGIN 5 */
     float tempValue = 0;
     float humValue = 0;
+    float luxValue = 0;
+    uint8_t soilHumValue = 0;
   /* Infinite loop */
 
 
   for(;;)
   {
-      if (uxQueueMessagesWaiting(AmbientTempQueueHandle)){
-          xQueueReceive(AmbientTempQueueHandle, &tempValue, 500);
+      if (AmbientTempQueueHandle != NULL &&
+      xQueueReceive(AmbientTempQueueHandle, &tempValue, 0)){
+          xQueueReset(AmbientTempQueueHandle);
           APP_Display_Room_Temperature(tempValue);
       }
-      if (uxQueueMessagesWaiting(AmbientHumQueueHandle)){
-          xQueueReceive(AmbientHumQueueHandle, &humValue, 500);
+      if (AmbientHumQueueHandle != NULL &&
+      xQueueReceive(AmbientHumQueueHandle, &humValue, 0)){
+          xQueueReset(AmbientHumQueueHandle);
           APP_Display_Room_Humidity(humValue);
       }
-      vTaskDelay(1000);
+      if (AmbientLuxQueueHandle != NULL &&
+      xQueueReceive(AmbientLuxQueueHandle, &luxValue, 0)){
+          xQueueReset(AmbientLuxQueueHandle);
+          APP_Display_Lux_Meter(luxValue);
+      }
+      APP_Display_Soil_Humidity(BSP_Get_Soil_Humidity());
+      vTaskDelay(100);
   }
   /* USER CODE END 5 */
-}
-
-void analizeQueues() {
-
 }
 
 /* USER CODE BEGIN Header_StartLux */
@@ -596,10 +607,14 @@ void analizeQueues() {
 void StartLux(void *argument)
 {
   /* USER CODE BEGIN StartLux */
+  float luxValue = 0;
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+      BSP_Get_Lux_Meter(&luxValue);
+      xQueueSend(AmbientLuxQueueHandle, (void*) &luxValue, 500);
+      vTaskDelay(100);
+
   }
   /* USER CODE END StartLux */
 }
@@ -620,7 +635,6 @@ void StartAmbientTempHum(void *argument)
 
   for(;;)
   {
-//    osDelay(1);
     taskENTER_CRITICAL();
     BSP_Read_Ambient_Temp_Hum();
     taskEXIT_CRITICAL();
@@ -644,10 +658,12 @@ void StartAmbientTempHum(void *argument)
 void StartSoilHum(void *argument)
 {
   /* USER CODE BEGIN StartSoilHum */
+  uint8_t soilHumValue = 0;
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    BSP_Read_Soil_Humidity();
+    vTaskDelay(500);
   }
   /* USER CODE END StartSoilHum */
 }
