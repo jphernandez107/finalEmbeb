@@ -142,33 +142,6 @@ final_embebidos_v2.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/build
 .PHONY : final_embebidos_v2.elf/fast
 
-Core/Src/Timer_Delay.obj: Core/Src/Timer_Delay.c.obj
-
-.PHONY : Core/Src/Timer_Delay.obj
-
-# target to build an object file
-Core/Src/Timer_Delay.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj
-.PHONY : Core/Src/Timer_Delay.c.obj
-
-Core/Src/Timer_Delay.i: Core/Src/Timer_Delay.c.i
-
-.PHONY : Core/Src/Timer_Delay.i
-
-# target to preprocess a source file
-Core/Src/Timer_Delay.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.i
-.PHONY : Core/Src/Timer_Delay.c.i
-
-Core/Src/Timer_Delay.s: Core/Src/Timer_Delay.c.s
-
-.PHONY : Core/Src/Timer_Delay.s
-
-# target to generate assembly for a file
-Core/Src/Timer_Delay.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_embebidos_v2.elf.dir\build.make CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.s
-.PHONY : Core/Src/Timer_Delay.c.s
-
 Core/Src/bsp.obj: Core/Src/bsp.c.obj
 
 .PHONY : Core/Src/bsp.obj
@@ -1321,9 +1294,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... final_embebidos_v2.elf
-	@echo ... Core/Src/Timer_Delay.obj
-	@echo ... Core/Src/Timer_Delay.i
-	@echo ... Core/Src/Timer_Delay.s
 	@echo ... Core/Src/bsp.obj
 	@echo ... Core/Src/bsp.i
 	@echo ... Core/Src/bsp.s

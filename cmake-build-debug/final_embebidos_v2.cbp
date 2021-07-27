@@ -111,9 +111,6 @@
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/FreeRTOSConfig.h">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/Timer_Delay.h">
-			<Option target="final_embebidos_v2.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/bsp.h">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
@@ -136,9 +133,6 @@
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Inc/stm32f4xx_it.h">
-			<Option target="final_embebidos_v2.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/Timer_Delay.c">
 			<Option target="final_embebidos_v2.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp.c">

@@ -6,8 +6,6 @@
 #include "stm32f4xx.h"
 #include <stm32f4xx_hal_tim.h>
 #include "stm32f4xx_hal.h"
-//#include "bsp_actuators.h"
-//#include "bsp_switches.h"
 #include "bsp_lcd.h"
 #include "bsp_lux_sensor.h"
 #include "bsp_temp_hum.h"
@@ -45,11 +43,8 @@ extern void APP_Timer100ms();
 */
 extern void APP_Timer10ms();
 
-/** Defines the number of ADC channels */
-#define ADC_CHANNELS 2
 
 volatile static uint32_t gu32_ticks = 0;
-uint32_t adc_values[ADC_CHANNELS];
 uint8_t soilHumValue = 0;
 uint32_t adcVal = 0;
 
@@ -75,17 +70,13 @@ void BSP_Init() {
 
     BSP_DHT_Init();
     HAL_TIM_Init();
-    DMA_Init();
     I2C1_Init();
     HAL_TIM_Init();
     ADC1_Init();
-//    BSP_Actuators_Init();
-//    BSP_Switches_Init();
     lcd16x2_i2c_init(&hi2c1);
     BSP_LCD_Initialize();
     BH1750_Init(&hi2c1);
     BH1750_SetMode(CONTINUOUS_HIGH_RES_MODE_2);
-    HAL_ADC_Start_DMA(&hadc1, adc_values, ADC_CHANNELS);
 }
 
 /**
@@ -176,8 +167,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   * @retval None
   */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-//    BSP_Switches_Pin_Interrupt_Callback(GPIO_Pin);
-    DHT_GetData(&DHT22);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {

@@ -31,7 +31,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/Timer_Delay.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/Timer_Delay.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lcd.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lcd.c.obj"
   "C:/Users/juan_/CLionProjects/FinalEmbebidos/Core/Src/bsp_lux_sensor.c" "C:/Users/juan_/CLionProjects/FinalEmbebidos/cmake-build-debug/CMakeFiles/final_embebidos_v2.elf.dir/Core/Src/bsp_lux_sensor.c.obj"
